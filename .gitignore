@@ -4,6 +4,8 @@
 *.dll
 *.so
 *.dylib
+start-stop/start-stop
+start-stop/start-stop.zip
 
 # Test binary, build with `go test -c`
 *.test
