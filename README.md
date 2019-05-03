@@ -45,3 +45,11 @@ aws lambda invoke --function-name start-stop --log-type Tail \
 --payload '{"groupbytag": "group-by-tag", "orderbytag": "order-by-tag", "OrderBy": ["tag1","tag2"], "tagfilters": [{ "name": "tag:filter-key", "value": ["tag:filter-valye"]}], "action": "start" }' \
 outputfile.txt
 ```
+
+## Lambda iam policy
+
+Lambda function need to have this privileges at least
+
+* ec2:StartInstances
+* ec2:StopInstances"
+* ec2:DescribeInstances
