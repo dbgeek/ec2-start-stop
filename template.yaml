@@ -1,0 +1,19 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  sam-ec2-start-stop
+  
+  SAM Template for ec2-start-stop
+
+# More info about Globals: https://github.com/dbgeek/ec2-start-stop/README.md
+Globals:
+  Function:
+    Timeout: 360
+
+Resources:
+  StartStop:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: start-stop/dist
+      Handler: start-stop
+      Runtime: go1.x
