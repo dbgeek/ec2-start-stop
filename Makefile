@@ -4,7 +4,7 @@ deps:
 	go get -u ./...
 
 clean: 
-	rm -rf ./start-stop/start-stop ./start-stop/start-stop.zip
+	rm -rf ./start-stop/dist
 	
 build:
-	cd start-stop; GOOS=linux GOARCH=amd64 go build -o start-stop ./; zip start-stop.zip start-stop
+	mkdir -p start-stop/dist; cd start-stop; GOOS=linux GOARCH=amd64 go build -o dist/start-stop ./; cd dist; zip start-stop.zip start-stop
