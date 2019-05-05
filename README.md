@@ -1,6 +1,6 @@
 # lambda function start-stop
 
-[![Go Report Card](https://goreportcard.com/badge/github.com/dbgeek/ec2-start-stop)](https://goreportcard.com/report/github.com/dbgeek/ec2-start-stop)
+[![Go Report Card](https://goreportcard.com/badge/github.com/dbgeek/ec2-start-stop)](https://goreportcard.com/report/github.com/dbgeek/ec2-start-stop) [![Build Status][travis image]][travis]
 
 AWS Lambda function that can start and stop ec2 instances that are tagged with `StartStop`.
 
@@ -123,3 +123,6 @@ Lambda function need to have this privileges at least
   ]
 }
 ```
+
+[travis]: https://travis-ci.org/dbgeek/ec2-start-stop
+[travis image]: https://travis-ci.org/dbgeek/ec2-start-stop.png?branch=master
