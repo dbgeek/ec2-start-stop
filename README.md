@@ -1,5 +1,7 @@
 # lambda function start-stop
 
+[![Go Report Card](https://goreportcard.com/badge/github.com/dbgeek/ec2-start-stop)](https://goreportcard.com/report/github.com/dbgeek/ec2-start-stop)
+
 AWS Lambda function that can start and stop ec2 instances that are tagged with `StartStop`.
 
 ## Payload specification for the function
