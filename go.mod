@@ -7,5 +7,5 @@ require (
 	github.com/aws/aws-sdk-go v1.19.21
 	github.com/cenkalti/backoff v2.1.1+incompatible
 	github.com/sirupsen/logrus v1.4.1
-	golang.org/x/net v0.0.0-20190502183928-7f726cade0ab // indirect
+	golang.org/x/net v0.7.0 // indirect
 )
